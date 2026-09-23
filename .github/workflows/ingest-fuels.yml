@@ -1,0 +1,34 @@
+name: Osinergmin Fuels Ingestion Pipeline
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'
+  workflow_dispatch:
+
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Fuel Ingestion Pipeline
+        env:
+          INTERNAL_SECRET: ${{ secrets.INTERNAL_SECRET }}
+          ENDPOINT_URL: https://ais-dev-2f7ptb3celz22zmqiko5fm-828365306740.us-east1.run.app/api/internal/ingest-fuels
+        run: |
+          echo "Iniciando ingesta programada de combustibles Osinergmin..."
+          
+          HTTP_CODE=$(curl -s -o response.json -w "%{http_code}" \
+            -X POST "$ENDPOINT_URL" \
+            -H "Content-Type: application/json" \
+            -H "X-Internal-Secret: $INTERNAL_SECRET" \
+            --max-time 120)
+            
+          echo "HTTP Status recibido: $HTTP_CODE"
+          
+          if [ "$HTTP_CODE" -eq 200 ]; then
+            echo "¡Ingesta completada con éxito!"
+            cat response.json
+          else
+            echo "Error: La ingesta falló con código HTTP $HTTP_CODE"
+            cat response.json
+            exit 1
+          fi
