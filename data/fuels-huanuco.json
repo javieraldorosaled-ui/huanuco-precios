@@ -1,7 +1,7 @@
 {
   "status": "SUCCESS",
   "source": "Osinergmin SCOP",
-  "lastSync": "2026-09-25T16:24:09.231Z",
+  "lastSync": "2026-09-25T21:02:00.336Z",
   "totalStations": 6,
   "districts": [
     "Huánuco Cercado",
@@ -26,7 +26,7 @@
       "verificationStatus": "VERIFICADO",
       "source": "Osinergmin SCOP Oficial",
       "sourceUrl": "https://www.osinergmin.gob.pe/",
-      "updatedAt": "2026-09-25T16:24:09.231Z",
+      "updatedAt": "2026-09-25T21:02:00.336Z",
       "isAvailable": true
     },
     {
@@ -46,7 +46,7 @@
       "verificationStatus": "VERIFICADO",
       "source": "Osinergmin SCOP Oficial",
       "sourceUrl": "https://www.osinergmin.gob.pe/",
-      "updatedAt": "2026-09-25T16:24:09.231Z",
+      "updatedAt": "2026-09-25T21:02:00.336Z",
       "isAvailable": true
     },
     {
@@ -66,7 +66,7 @@
       "verificationStatus": "VERIFICADO",
       "source": "Osinergmin SCOP Oficial",
       "sourceUrl": "https://www.osinergmin.gob.pe/",
-      "updatedAt": "2026-09-25T16:24:09.231Z",
+      "updatedAt": "2026-09-25T21:02:00.336Z",
       "isAvailable": true
     },
     {
@@ -86,7 +86,7 @@
       "verificationStatus": "VERIFICADO",
       "source": "Osinergmin SCOP Oficial",
       "sourceUrl": "https://www.osinergmin.gob.pe/",
-      "updatedAt": "2026-09-25T16:24:09.231Z",
+      "updatedAt": "2026-09-25T21:02:00.336Z",
       "isAvailable": true
     },
     {
@@ -106,7 +106,7 @@
       "verificationStatus": "VERIFICADO",
       "source": "Osinergmin SCOP Oficial",
       "sourceUrl": "https://www.osinergmin.gob.pe/",
-      "updatedAt": "2026-09-25T16:24:09.231Z",
+      "updatedAt": "2026-09-25T21:02:00.336Z",
       "isAvailable": true
     },
     {
@@ -126,7 +126,7 @@
       "verificationStatus": "VERIFICADO",
       "source": "Osinergmin SCOP Oficial",
       "sourceUrl": "https://www.osinergmin.gob.pe/",
-      "updatedAt": "2026-09-25T16:24:09.231Z",
+      "updatedAt": "2026-09-25T21:02:00.336Z",
       "isAvailable": true
     }
   ]
